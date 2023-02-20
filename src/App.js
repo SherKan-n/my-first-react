@@ -7,7 +7,10 @@ import React from 'react';
 
 
 import './App.css';
-import Cauldron from './components/Cauldron';
+// import DrinkingPerson from './components/DrinkingPerson';
+import Revenclaw from './components/Revenclaw';
+// import Cauldron from './components/Cauldron';
+// import Wizard from './components/Wizard';
 // import ParentPotion from './components/ParentPotion';
 
 function App() {
@@ -21,7 +24,10 @@ function App() {
       <Sumoning name='test' potion='ice' /> */}
       {/* <HogwartsLetter /> */}
       {/* <ParentPotion /> */}
-      <Cauldron />
+      {/* <Cauldron /> */}
+      {/* <Wizard /> */}
+      {/* <DrinkingPerson /> */}
+      <Revenclaw />
     </div>
   );
 }
@@ -44,6 +50,11 @@ function App() {
 
              - functional components => HOOK - useState
              - class base components => this.state
+
+
+  Child -> Parent: 1. Create function inside parent component
+                   2. Pass the function through props to child
+                   3. Pass arg. to the function from inside child component
 */
 
 

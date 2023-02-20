@@ -6,7 +6,7 @@ import React from "react";
 
 function Sumoning(props) {
    console.log(props);
-   
+
    return (
       <p>
          Proffesor {props.name} is the potion {props.potion} teacher
