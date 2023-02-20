@@ -11,12 +11,14 @@ function Revenclaw() {
 
    function setVal(e) {
       setFounder({
-         firstName: e.target.value
+         firstName: e.target.value,
+         lastName: founder.lastName,
       });
    }
 
    function setVal2(e) {
       setFounder({
+         firstName: founder.firstName,
          lastName: e.target.value
       });
    }
