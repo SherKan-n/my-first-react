@@ -11,22 +11,23 @@ function Revenclaw() {
 
    function setVal(e) {
       setFounder({
+         ...founder,
          firstName: e.target.value,
-         lastName: founder.lastName,
       });
    }
 
    function setVal2(e) {
       setFounder({
-         firstName: founder.firstName,
+         ...founder,
          lastName: e.target.value
       });
    }
 
    return (
       <form>
-         <input type="text" onKeyUp={setVal}></input>
-         <input type="text" onKeyUp={setVal2}></input>
+         <br /><br />
+         <input type="text" onChange={setVal}></input>
+         <input type="text" onChange={setVal2}></input>
 
          <h3>Revenclaw founder is {founder.firstName}</h3>
          <h3>Revenclaw founder is {founder.lastName}</h3>
